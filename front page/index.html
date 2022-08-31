@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="witcher-logo.png">
+        <title>The Witcher</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+    <body>
+        <div id="root">
+            <header>
+                <nav>
+                    <div id="global-logo-div"><a href="#home-container"><img src="witcher-logo.png"></a><div id="title-logo-div"><div id="typed-out"><h4>The Witcher.</h4></div></div></div>
+                    <a href="#" class="toggle_btn" >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div id="navlinks">
+                        <ul>
+                            <li>
+                                <a href="#about-section">About</a>
+                            </li>
+                            <li>
+                                <a href="#services-section">Services</a>
+                            </li>
+                            <li>
+                                <a href="#prices-section">Prices</a>
+                            </li>
+                            <li id="signin-container">
+                                <a href="signin.php" id="signin-link">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            </header>
+            <!--background-->
+            <div id="eclips1"></div>
+            <div id="eclips2"></div>
+            <div id="home-container">
+                <div id="home-words">
+                    <h2>Get your bypass with one magical trick</h2>
+                </div>
+                <div id="home-image">
+                    <img src="logo-Apple-removebg.png" alt="">
+                </div>
+            </div>
+            <div class="sections" id="about-section">
+                <h1>About</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae hic voluptas modi repudiandae? Earum sed provident laudantium voluptas cupiditate, deserunt eaque. Placeat est quod officia voluptatem non et maxime quaerat.
+            </div>
+            <div class="sections" id="services-section">
+                <h1>Services</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae hic voluptas modi repudiandae? Earum sed provident laudantium voluptas cupiditate, deserunt eaque. Placeat est quod officia voluptatem non et maxime quaerat.
+            </div>
+            <div class="sections" id="prices-section">
+                <h1>Prices</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae hic voluptas modi repudiandae? Earum sed provident laudantium voluptas cupiditate, deserunt eaque. Placeat est quod officia voluptatem non et maxime quaerat.
+            </div>
+
+
+        </div>
+        
+        <footer id="footer">
+            <div class="contact">
+                coming soon : )
+            </div>
+        </footer>
+
+    </body>
+    <script>
+       // document.getElementsByTagName("header").style.backgroundColor = "none";
+       const toggleBt = document.getElementsByClassName('toggle_btn')[0];
+        const navbarLinks = document.getElementsById("navlinks")[0];
+        menu= document.getElementsByClassName("navbar")[0]
+
+        toggleBt.addEventListener('click', () =>{
+            navbarLinks.classList.toggle('active')
+            menu.classList.toggle("active")
+
+        })
+    </script>
+    
+</html>
